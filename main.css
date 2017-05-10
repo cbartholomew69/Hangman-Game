@@ -1,6 +1,41 @@
-h1 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 50px;
+body {
+  background: gold;
   text-align: center;
+
+}
+
+h1 {
+  font-family: "PT Serif", sans-serif;
+  font-size: 80px;
+  text-align: center;
+}
+
+#lives {
+  font-size: 1.6em;
+  text-align: center;
+  display: block;
+}
+
+button{
+  background-color: black;
+  color: gold;
+  border-radius: 5px;
+  font-size: 1.5em;
+  padding: 18px 10px;
+  width: 180px;
+  margin: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:hover{
+  background: white;
+
+}
+
+p {
+  font-size: 1.6em;
+  text-align: center;
+  display: block;
 }
 

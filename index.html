@@ -1,44 +1,29 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="bootstrap.css">
-  <link rel="stylesheet" href="main.css" type="text/css">
-   <title>Hangman</title>
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="main.css" type="text/css">
+
+    <title>Hangman</title>
+
+  </head>
+
 <body>
-  <h1>H A N G M A N</h1>
 
-<div id="outside">
-  <div id="inside">
-    <table>
-      <tr>
-        <td id= "letter0">A</td>
-        <td id= "letter1">B</td>
-        <td id= "letter2">C</td>
-        <td id= "letter3">D</td>
-        <td id= "letter4">E</td>
-      </tr>
-      <tr>
-        <td id="letter4">F</td>
-        <td id="letter5">G</td>
-        <td id="letter6">H</td>
-        <td id="letter7">I</td>
-        <td id="letter8">J</td>
-      </tr>
-      <tr>
-        <td id="letters9">K</td>
-        <td id="letters10">L</td>
-        <td id="letters11">M</td>
-        <td id="letters12">N</td>
-        <td id="letters13">O</td>
-      </tr>
-  <button>START GAME</button>
-  <button>QUIT GAME</button>
-  <button>RESTART GAME</button>
+   <h1>H A N G M A N</h1>
 
+      <div class="container">
+        <button id="start">Start Game</button>
+        <button id="reset">Reset Game</button>
+      </div>
+      <p> You have <span id="lives">7</span> Lives Left.</p>
 
-    <script src="jquery.js"></script>
-    <script src="bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
