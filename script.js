@@ -1,20 +1,29 @@
-var alphabet = ['javascript', 'angular', 'variables', 'syntax', 'loops' ];
+window.onload = function () {
 
-function secretWord () {
+  var words = ['javasript', 'angular', 'syntax', 'ruby', 'jquery', 'nodes'];
 
-  return words[Math.floor(Math.random() * words.length)];
 }
 
-var buttons = function () {
-  myButtons = document.getElementById('buttons');
-  letters = document.createElement('ul');
-  for (var i = 0; i < alphabet.length; i++) {
-    letters.id = 'alphabet';
-    list = document.createElement('li');
-    list.id = 'letter';
-    list.innerHTML = alphabet[i];
-    check();
-    myButtons.appendChild(letters);
-    letter.appendChild(list);
+var word="";
+
+var answerArray = [];
+
+function start() {
+
+  words = word[Math.floor(Math.random() * word.length)];
+  answerArray = [];
+  for (var i = 0; i < word.length; i++) {
+    answerArray[i] = "_";
   }
+  document.getElementById('answer').html() = answerArray.join(" ");
+  document.getElementById('message').html() = 'Enter a letter or click quit'
+}
+start();
+
+function guessOne () {
+  var guess = document.getElementById('guess').value;
+  var showMessage = "";
+    if (guess.length !== 1) {
+      showMessage = "Enter a single letter!"
+    }
 }
