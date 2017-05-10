@@ -15,8 +15,8 @@ function start() {
   for (var i = 0; i < word.length; i++) {
     answerArray[i] = "_";
   }
-  document.getElementById('answer').html() = answerArray.join(" ");
-  document.getElementById('message').html() = 'Enter a letter or click quit'
+  document.getElementById('answer').innerHTML = answerArray.join(" ");
+  document.getElementById('message').innerHTML = 'Enter a letter or click quit'
 }
 start();
 
@@ -24,6 +24,39 @@ function guessOne () {
   var guess = document.getElementById('guess').value;
   var showMessage = "";
     if (guess.length !== 1) {
-      showMessage = "Enter a single letter!"
+      showMessage = "Enter a single letter!";
+    } else {
+  var i = 0;
+    for (var i = 0; i < word.length; i++) {
+      if (word[i] === guess) {
+        answerArray[i] = guess;
+        showMessage = "Yay! " + guess + " is part of the answer";
+      }
     }
+  }
 }
+
+  var remainingLetters = answerArray.length;
+
+    for (i = 0; i < answerArray.length; i++) {
+
+      if (answerArray[i] !== '_') {
+
+        remainingLetters -= 1;
+      }
+    }
+      if (remainingLetters == 0){
+
+        showMessage = "You got it! BaJesus, you guessed the word";
+
+      if (showMessage === "") {
+
+        showMessage = "To dog on bad, no " + guess;
+
+document.getElementById("answer").innerHTML = answerArray.join(" ");
+document.getElementById("guess").value = "";
+ }
+}
+
+
+
