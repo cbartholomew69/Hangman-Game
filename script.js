@@ -48,7 +48,7 @@ window.onload = function () {
 
           document.getElementById('answer').innerHTML = answerArray.join(" ");
 
-          alert("Yay! you guessed a letter ");
+          //alert("Yay! you guessed a letter ");
         }
         else {
             console.log("I am pissed you didn't get it");
@@ -56,9 +56,16 @@ window.onload = function () {
       }
     }
     else {
+
       counter--;
 
       document.getElementById('guessesLeft').innerHTML = "You have " + counter + " Guesses Left";
+
+      if (counter === 0) {
+
+        alert("Gameover");
+
+      }
 
       console.log(counter);
     }
