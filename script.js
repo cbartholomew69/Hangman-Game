@@ -53,6 +53,9 @@ window.onload = function () {
     }
     else {
       counter--;
+
+      document.getElementById('guessesLeft').innerHTML = "You have " + counter + " Guesses Left";
+
       console.log(counter);
     }
     // else lowers your counter; guess is wrong
