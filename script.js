@@ -8,6 +8,8 @@ window.onload = function () {
 
   var word = '';
 
+  var counter = 7;
+
   function start() {
 
 
@@ -28,20 +30,32 @@ window.onload = function () {
   function guessOne () {
 
     var guess = document.getElementById('letter').value;
-    //console.log(guess);
+    console.log(word.indexOf(guess));
 
-
-
+    if (word.indexOf(guess) > -1) {
+    // if statment that checks word.indexOf(guess)
       for (var i = 0; i < word.length; i++) {
 
         if (word[i] === guess) {
 
           answerArray[i] = guess;
+
           console.log(answerArray);
+
           document.getElementById('answer').innerHTML = answerArray.join(" ");
+
           alert("Yay! you guessed a letter ");
         }
+        else {
+            console.log("I am pissed you didn't get it");
+        }
       }
+    }
+    else {
+      counter--;
+      console.log(counter);
+    }
+    // else lowers your counter; guess is wrong
 
   }
 
