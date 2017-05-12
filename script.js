@@ -5,14 +5,15 @@ window.onload = function () {
   var answerArray = [];
 
   var randomNumber = 0;
+
   var word = '';
 
   function start() {
-    console.log('word : ' + word);
+
 
     randomNumber = Math.floor(Math.random() * words.length);
     word = words[randomNumber];
-
+    console.log('word : ' + word);
     for (var i = 0; i < word.length; i++) {
 
       answerArray[i] = "_";
@@ -27,29 +28,21 @@ window.onload = function () {
   function guessOne () {
 
     var guess = document.getElementById('letter').value;
-    console.log(guess);
+    //console.log(guess);
 
-    var showMessage = "";
 
-    if (guess.length !== 1) {
-
-      showMessage = "Enter a single letter!";
-
-    }
-    else {
-
-      var i = 0;
 
       for (var i = 0; i < word.length; i++) {
 
         if (word[i] === guess) {
 
           answerArray[i] = guess;
-
-          showMessage = "Yay! " + guess + " is part of the answer";
+          console.log(answerArray);
+          document.getElementById('answer').innerHTML = answerArray.join(" ");
+          alert("Yay! you guessed a letter ");
         }
       }
-    }
+
   }
 
   var remainingLetters = answerArray.length;
