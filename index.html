@@ -8,68 +8,42 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <link rel="stylesheet" href="main.css" type="text/css">
 
+
     <title>Hangman</title>
 
   </head>
 
 <body>
 
+
    <h1>H A N G M A N</h1>
-   <form>
-    <input id="guess" type="text">
-    <input type="button" value="guess" onClick="guessOne()"/>
-    <input type="button" value="quit" onClick="quit()"/>
-    <p id="message">&nbsp;</p>
-    </form>
-    <p>
-      <font size="+3"><span id="answer">puzzle loading..</span></font>
-    </p>
 
-    <div id="container">
-    <div class="keyboard">
-      <div>
-        <div>a</div>
-        <div>b</div>
-        <div>c</div>
-        <div>d</div>
-        <div>e</div>
-        <div>f</div>
-        <div>g</div>
-      </div>
-      <div>
-        <div>h</div>
-        <div>i</div>
-        <div>j</div>
-        <div>k</div>
-        <div>l</div>
-        <div>m</div>
-        <div>n</div>
-      </div>
-      <div>
-        <div>o</div>
-        <div>p</div>
-        <div>q</div>
-        <div>r</div>
-        <div>s</div>
-        <div>t</div>
-        <div>u</div>
-      </div>
-      <div>
-        <div>v</div>
-        <div>w</div>
-        <div>x</div>
-        <div>y</div>
-        <div>z</div>
-      </div>
-    </div>
-    </div>
+<div id="alphabet">
 
+  <div id="current"></div>
 
-    <div class="container">
-        <button id="start">Start Game</button>
-        <button id="reset">Reset Game</button>
-        <button id="quit">Quit Game</button>
-    </div>
+</div>
+
+   <h2>Guess a letter</h2>
+   <input id="letter" type="text">
+   <input type="button" value="Check!" onClick="Letter()">
+   <p id="answer"></p>
+   <p id="counter"></p>
+   <p id="stat"></p>
+
+   <p1>
+    Guess the Word in 7 or fewer guesses
+  <br>
+    Click on each letter to guess the word
+  </p1>
+
+  <div id="guessesLeft">You have 7 Guesses Left</div>
+
+  <div class="container">
+      <button id="start">Start Game</button>
+      <button id="reset">Reset Game</button>
+      <button id="quit">Quit Game</button>
+  </div>
 
 
 
