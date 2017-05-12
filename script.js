@@ -26,7 +26,8 @@ window.onload = function () {
 
   function guessOne () {
 
-    var guess = document.getElementById('guess').value;
+    var guess = document.getElementById('letter').value;
+    console.log(guess);
 
     var showMessage = "";
 
@@ -95,4 +96,10 @@ window.onload = function () {
   var quitButton = document.getElementById('quit');
 
   quitButton.addEventListener('click', quit);
+
+  var letterButton = document.getElementById('guessedLetter');
+
+  letterButton.addEventListener('click', guessOne);
+
+
 }
