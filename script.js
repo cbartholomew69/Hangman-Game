@@ -4,13 +4,14 @@ window.onload = function () {
 
   var answerArray = [];
 
-  var randomNumber = Math.floor(Math.random() * words.length);
-  var word = words[randomNumber];
+  var randomNumber = 0;
+  var word = '';
 
   function start() {
     console.log('word : ' + word);
 
-    // word = words[Math.floor(Math.random() * word.length)];
+    randomNumber = Math.floor(Math.random() * words.length);
+    word = words[randomNumber];
 
     for (var i = 0; i < word.length; i++) {
 
@@ -20,10 +21,7 @@ window.onload = function () {
 
     console.log('answer : ' + answerArray.join(" "));
     document.getElementById('answer').innerHTML = answerArray.join(" ");
-    // $('#')
-    // $('#answer').innerHTML = answerArray.join(" ");
-
-    // document.getElementById('message').innerHTML = 'Enter a letter or click quit'
+    // document.getElementById('directions').setAttribute('class', 'hidden');
   }
 
   function guessOne () {
@@ -82,16 +80,19 @@ window.onload = function () {
 
   function quit() {
 
-    document.getElementById("message").innerHTML = "The word was "+word;
+    document.getElementById("answer").innerHTML = "The word was " + word;
 
-    for (var j = 0; j < word.length; j++) {
-
-      answerArray[j] = word[j];
-    }
-    document.getElementById("answer").innerHTML = answerArray.join(" ");
   }
 
   var startButton = document.getElementById('start');
 
   startButton.addEventListener('click', start);
+
+  var resetButton = document.getElementById('reset');
+
+  resetButton.addEventListener('click', start);
+
+  var quitButton = document.getElementById('quit');
+
+  quitButton.addEventListener('click', quit);
 }

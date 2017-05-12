@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <link rel="stylesheet" href="main.css" type="text/css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css" type="text/css">
 
     <title>Hangman</title>
 
@@ -18,25 +17,26 @@
 
    <h1>H A N G M A N</h1>
 
-<div id="alphabet">
+  <div id="alphabet">
 
-  <div id="current"></div>
+    <div id="current"></div>
 
-</div>
+  </div>
 
-   <h2>Guess a letter</h2>
-   <input id="letter" type="text">
-   <input type="button" value="Check!" onClick="Letter()">
-   <p id="answer"></p>
-   <p id="counter"></p>
-   <p id="stat"></p>
+  <h2>Guess a letter</h2>
+  <input id="letter" type="text">
+  <input type="button" value="Check!" onClick="Letter()">
+  <p id="answer"></p>
+  <p id="counter"></p>
+  <p id="stat"></p>
 
-   <p1>
+  <p id="directions">
     Guess the Word in 7 or fewer guesses
-  <br>
+    <br>
     Click on each letter to guess the word
-  </p1>
+  </p>
 
+  <!-- this needs to be your counter -->
   <div id="guessesLeft">You have 7 Guesses Left</div>
 
   <div class="container">
@@ -45,11 +45,8 @@
       <button id="quit">Quit Game</button>
   </div>
 
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
