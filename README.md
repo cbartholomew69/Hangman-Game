@@ -11,3 +11,4 @@ You have 7 lives to try and anwer the secret word before you hang the man and th
 
 https://github.com/cbartholomew69/Hangman-Game/blob/master/IMG_0619.JPG
 https://github.com/cbartholomew69/Hangman-Game/blob/master/IMG_0620.JPG
+https://github.com/cbartholomew69/Hangman-Game/blob/master/IMG_0621.JPG
