@@ -10,3 +10,6 @@ If you guess a letter wrong than you will have gained an element to your gallow.
 You have 7 lives to try and anwer the secret word before you hang the man and the game will be over.
 
 
+IMG_0619.JPG	loaded wireframe images	just now
+IMG_0620.JPG	loaded wireframe images	just now
+IMG_0621.JPG
