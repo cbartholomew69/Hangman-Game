@@ -1,6 +1,6 @@
 window.onload = function () {
 
-  var words = ['javasript', 'angular', 'syntax', 'ruby', 'jquery', 'nodes'];
+  var words = ['javascription', 'sangular', 'syntaxes', 'rubylet', 'jqueryeyed', 'nodest'];
 
   var answerArray = [];
 
@@ -80,9 +80,11 @@ window.onload = function () {
 
   }
 
-  var startButton = document.getElementById('start');
-
-  startButton.addEventListener('click', start);
+ var startButton = document.getElementById('start');
+ startButton.addEventListener('click', start);
+// $('.start')on('click', function(){
+ //       start();
+ //   })
 
   var resetButton = document.getElementById('reset');
 
