@@ -1,8 +1,6 @@
 # Hangman-Game
 
-<<<<<<< HEAD
-Hangman is a game that 
-=======
+
 https://trello.com/b/oGYaGuog/wdi-project-1
 
 Created Hangman Using Javasript, HTML and CSS.
